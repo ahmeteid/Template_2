@@ -2,8 +2,7 @@
 :root {
     --main-color: #19c8fa;
     --transparent-color: rgb(15 116 143 / 70%);
-    --padding-top: 100px;
-    --padding-bottom: 100px;
+    --section-padding: 100px;
     --paragraph-color: #777;
 }
 
@@ -326,15 +325,17 @@ header nav .form i {
 
 /* Start Services */
 .services {
-    padding-top: var(--padding-top);
-    padding-bottom: var(--padding-top);
+    padding-top: var(--section-padding);
+    padding-bottom: var(---section-padding);
 }
 
-.services .services-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    column-gap: 40px;
-    row-gap: 60px;
+@media (min-width: 768px) {
+    .services .services-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        column-gap: 40px;
+        row-gap: 60px;
+    }
 }
 
 .services .srv-box {
@@ -344,6 +345,19 @@ header nav .form i {
 .services .srv-box i {
     font-size: 40px;
     margin-right: 50px;
+}
+
+@media (max-width: 768px) {
+    .services .srv-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .services .srv-box i {
+        margin: 0 0 30px;
+    }
 }
 
 .services .srv-box h3 {
