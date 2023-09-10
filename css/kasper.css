@@ -370,6 +370,8 @@ header nav .form i {
     color: var(--paragraph-color);
 }
 
+/* End Services */
+
 /* Start Design */
 .design {
     padding-top: var(--section-padding);
@@ -443,4 +445,33 @@ header nav .form i {
 
 /* End Design */
 
-/* End Services */
+
+
+/* Start Protofolio */
+.protofolio {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.protofolio .shuffle {
+    display: flex;
+    justify-content: center;
+}
+
+.protofolio .shuffle li {
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.protofolio .shuffle li.active {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.protofolio .imgs-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+/* End Protofolio */
