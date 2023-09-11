@@ -474,4 +474,67 @@ header nav .form i {
     margin-top: 60px;
 }
 
+.protofolio .imgs-container .box {
+    position: relative;
+    overflow: hidden;
+}
+
+@media (min-width: 767px) {
+    .protofolio .imgs-container .box {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 1199px) {
+    .protofolio .imgs-container .box {
+        flex-basis: 25%;
+    }
+}
+
+.protofolio .imgs-container .box img {
+    max-width: 100%;
+    transition: 0.3s;
+}
+
+.protofolio .imgs-container .box:hover .caption {
+    bottom: 0;
+}
+
+.protofolio .imgs-container .box:hover img {
+    transform: rotate(3deg) scale(1.1);
+}
+
+.protofolio .imgs-container .box .caption {
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.protofolio .imgs-container .box .caption h4 {
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+}
+
+.protofolio .imgs-container .box .caption p {
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+
+.protofolio .more {
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 30px auto;
+    display: block;
+    width: fit-content;
+}
+
 /* End Protofolio */
