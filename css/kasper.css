@@ -75,6 +75,12 @@ ul {
     text-transform: uppercase;
     margin-bottom: 70px;
     position: relative;
+    transition: 0.3s;
+}
+
+.main-heading h2:hover {
+    color: var(--main-color);
+    transform: scale(1.3);
 }
 
 .main-heading h2::before {
@@ -139,6 +145,11 @@ header .container::after {
 
 header .logo img {
     height: 40px;
+    transition: 0.3s;
+}
+
+header .logo img:hover {
+    transform: scale(1.3);
 }
 
 header nav {
@@ -151,6 +162,18 @@ header nav {
 header nav .toggle-menu {
     color: white;
     font-size: 20px;
+    transition: 0.3s;
+}
+
+header nav .toggle-menu:hover {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -198,6 +221,7 @@ header nav ul li a.active,
 header nav ul li a:hover {
     color: var(--main-color);
     border-bottom: 1px solid var(--main-color);
+    transform: scale(1.3);
 }
 
 header nav .form {
@@ -215,6 +239,19 @@ header nav .form i {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+header nav .form i:hover {
+    transform: scale(1.3);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* End Header */
@@ -283,7 +320,9 @@ header nav .form i {
     transform: translateY(-50%);
     font-size: 50px;
     color: #ddd;
+    transition: 0.3s;
 }
+
 
 @media (max-width: 767px) {
     .landing .change-background {
@@ -345,6 +384,12 @@ header nav .form i {
 .services .srv-box i {
     font-size: 40px;
     margin-right: 50px;
+    transition: 0.3s;
+}
+
+.services .srv-box i:hover {
+    transform: scale(1.3);
+    color: var(--main-color);
 }
 
 @media (max-width: 768px) {
@@ -427,11 +472,19 @@ header nav .form i {
     font-weight: normal;
     margin-bottom: 40px;
     text-transform: uppercase;
+    transition: 0.3s;
 }
 
 .design .text ul li {
     padding: 15px 0;
     text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.design .text ul li:hover,
+.design .text h2:hover {
+    transform: scale(1.3);
+    color: var(--main-color);
 }
 
 .design .text ul li::before {
@@ -461,6 +514,13 @@ header nav .form i {
 .protofolio .shuffle li {
     padding: 10px;
     text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.protofolio .shuffle li:hover {
+    transform: scale(1.3);
+    background-color: var(--main-color);
+    color: white;
 }
 
 .protofolio .shuffle li.active {
@@ -535,6 +595,11 @@ header nav .form i {
     margin: 30px auto;
     display: block;
     width: fit-content;
+    transition: 0.3s;
+}
+
+.protofolio .more:hover {
+    transform: scale(1.3);
 }
 
 /* End Protofolio */
@@ -586,6 +651,11 @@ header nav .form i {
     color: white;
     padding: 10px 20px;
     border: none;
+    transition: 0.3s;
+}
+
+.video .text button:hover {
+    transform: scale(1.3);
 }
 
 /* End Video */
@@ -679,6 +749,7 @@ header nav .form i {
 
 .satistics .box i:hover {
     transform: rotate(3deg) scale(1.3);
+    background-color: var(--main-color);
 }
 
 .satistics .box .number {
