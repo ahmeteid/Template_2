@@ -994,6 +994,7 @@ header nav .form i:hover {
 .pricing {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
+    background-color: red;
 }
 
 /* End Pricing */
