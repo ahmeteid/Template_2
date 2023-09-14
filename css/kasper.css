@@ -1181,6 +1181,7 @@ header nav .form i:hover {
     border: 1px solid white;
     border-left: none;
     text-transform: uppercase;
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -1209,3 +1210,104 @@ header nav .form i:hover {
 }
 
 /* End Subscribe */
+
+/* Strat Contact */
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.contact .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .contact .content {
+        flex-direction: column;
+    }
+}
+
+.contact .content form {
+    flex-basis: 70%;
+}
+
+.contact .content form .main-input {
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.contact .content form textarea.main-input {
+    height: 200px;
+}
+
+.contact .content form .main-input:focus {
+    outline: none;
+}
+
+
+.contact .content form [type="submit"] {
+    display: flex;
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    padding: 20px;
+    margin-left: auto;
+    text-transform: uppercase;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contact .content form [type="submit"]:hover {
+    transform: scale(1.03);
+}
+
+.contact .content .info {
+    flex-basis: 25%;
+}
+
+@media (max-width: 767px) {
+    .contact .content .info {
+        order: -1;
+        text-align: center;
+    }
+}
+
+.contact .content .info h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.contact .content .info .phone {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--paragraph-color);
+}
+
+.contact .content .info h4:nth-of-type(2) {
+    margin-top: 100px;
+}
+
+@media (max-width: 767px) {
+    .contact .content .info h4:nth-of-type(2) {
+        margin-top: 30px;
+    }
+}
+
+.contact .content .info address {
+    color: var(--paragraph-color);
+    line-height: 2;
+}
+
+@media (max-width: 767px) {
+    .contact .content .info address {
+        margin-bottom: 40px;
+    }
+}
+
+/* End Contact */
